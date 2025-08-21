@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Posicionamento CSS Avançado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Desafio CSS Avançado</h1>
+            <div class="level-info">
+                <span id="level-counter">Nível 1 de 5</span>
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="arena-container">
+                <div class="arena">
+                    <div id="target" class="target"></div>
+                    <div id="box" class="box"></div>
+                </div>
+            </div>
+            
+            <div class="controls-container">
+                <p id="challenge-text" class="challenge-text"></p>
+                <div class="code-editor">
+                    <div class="line-numbers">1<br>2<br>3<br>4<br>5</div>
+                    <textarea id="css-code" class="css-input" placeholder="/* Use propriedades como 'top', 'left' e 'transform' */"></textarea>
+                </div>
+                
+                <div class="buttons">
+                    <button id="apply-btn" class="btn apply-btn">Aplicar CSS</button>
+                    <button id="check-btn" class="btn check-btn">Verificar</button>
+                    <button id="next-level-btn" class="btn next-btn" style="display: none;">Próximo Nível &raquo;</button>
+                </div>
+                
+                <div id="feedback" class="feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
